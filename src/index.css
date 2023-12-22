@@ -388,23 +388,23 @@ main {
   transition: ease-in-out 500ms;
 }
 
-/* //////////////////////////////////////////////////////// */
+/* ///////////////// Sign-up / Register//////////////////// */
 
-/*  */
-
-/* .loading-screen {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: #0c1620;
-  z-index: 999999;
+#FormsContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: white;
+  flex-direction: row;
+  gap: 2em;
 }
 
-.hide-ls {
-  display: none;
-} */
+#SignInForm,
+#RegisterForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+#RegisterForm {
+}

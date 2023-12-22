@@ -8,15 +8,18 @@ import { IoSearchCircle } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { PiUserCircleLight } from "react-icons/pi";
+
+import { Outlet, Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
       <header>
         <nav id="topNav">
           <div id="logoContainer">
-            <a href="./">
+            <Link to="/">
               <img src="public\assets\intellivinci-logo.png"></img>
-            </a>
+            </Link>
           </div>
           <div id="searchBar">
             <input></input>
@@ -25,50 +28,50 @@ function Header() {
             </a>
           </div>
           <div id="iconsContainer">
-            <a class="largeIcons" href="./">
+            <Link class="largeIcons" to="SignInRegister">
               <CiUser />
-            </a>
-            <a class="largeIcons" href="./">
+            </Link>
+            <Link class="largeIcons" to="Wishlist">
               <CiHeart />
-            </a>
+            </Link>
 
-            <a class="largeIcons" href="./">
+            <Link class="largeIcons" to="Cart">
               <CiShoppingCart></CiShoppingCart>
-            </a>
+            </Link>
           </div>
         </nav>
 
         <nav id="bottomNav">
           <ul>
             <li>
-              <a id="FaFire" href="#">
+              <Link id="FaFire" to="/ShopDeals">
                 <FaFire /> <span>Shop Deals</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a id="BiSolidCategoryAlt" href="#">
+              <Link id="BiSolidCategoryAlt">
                 <BiSolidCategoryAlt /> <span>Categories</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a id="IoCalendar" href="#">
+              <Link id="IoCalendar" to="/SeasonalOffers">
                 <IoCalendar /> <span>Seasonal Offers</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a id="FaBook" href="#">
+              <Link id="FaBook" to="/About">
                 <FaBook /> <span>About</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                {" "}
+              <Link>
                 <BiSolidMessageSquareDetail /> <span>Contact Us</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </header>
+      <Outlet></Outlet>
     </>
   );
 }
