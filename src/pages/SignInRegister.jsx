@@ -1,12 +1,12 @@
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
-} from "../utils/firebase/firebase.utils";
+  createUserDocFromAuth,
+} from "../firebase/firebase.utils";
 
 function SignInRegister() {
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopup();
-    createUserDocumentFromAuth(user);
+    createUserDocFromAuth(user);
   };
 
   return (
@@ -18,7 +18,7 @@ function SignInRegister() {
         </div>
         <div id="RegisterForm">
           <h2>New here? - Sign-Up</h2>
-          <button onClick={logGoogleUser}>Sign in with Google Popup</button>
+          <button onClick={logGoogleUser}>Sign up with Google Popup</button>
         </div>
       </div>
     </>

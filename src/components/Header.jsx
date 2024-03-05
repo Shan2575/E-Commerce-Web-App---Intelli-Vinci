@@ -18,26 +18,36 @@ function Header() {
         <nav id="topNav">
           <div id="logoContainer">
             <Link to="/">
-              <img src="public\assets\intellivinci-logo.png"></img>
+              <div className="iconBorder logoBorder">
+                <img src="public\assets\intellivinci-logo.png"></img>
+              </div>
             </Link>
           </div>
+
           <div id="searchBar">
             <input></input>
+            {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Figure out search function !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
             <a id="IoSearchCircle" href="">
               <IoSearchCircle></IoSearchCircle>
             </a>
           </div>
-          <div id="iconsContainer">
-            <Link class="largeIcons" to="SignInRegister">
-              <CiUser />
-            </Link>
-            <Link class="largeIcons" to="Wishlist">
-              <CiHeart />
-            </Link>
 
-            <Link class="largeIcons" to="Cart">
-              <CiShoppingCart></CiShoppingCart>
-            </Link>
+          <div id="iconsContainer">
+            <div className="iconBorder">
+              <Link class="largeIcons" to="SignInRegister">
+                <CiUser />
+              </Link>
+            </div>
+            <div className="iconBorder">
+              <Link class="largeIcons" to="Wishlist">
+                <CiHeart />
+              </Link>
+            </div>
+            <div className="iconBorder">
+              <Link class="largeIcons" to="Cart">
+                <CiShoppingCart></CiShoppingCart>
+              </Link>
+            </div>
           </div>
         </nav>
 
