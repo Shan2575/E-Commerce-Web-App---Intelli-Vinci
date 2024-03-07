@@ -1,4 +1,5 @@
 import HeroContent from "../components/HeroContent";
+import InfiniteScrollingCarousel from "../components/InfiniteScrollingCarousel";
 
 function Home() {
   return (
@@ -6,6 +7,7 @@ function Home() {
       <main>
         <HeroContent></HeroContent>
       </main>
+      {/* <InfiniteScrollingCarousel></InfiniteScrollingCarousel> */}
     </>
   );
 }

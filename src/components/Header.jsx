@@ -34,17 +34,17 @@ function Header() {
 
           <div id="iconsContainer">
             <div className="iconBorder">
-              <Link class="largeIcons" to="SignInRegister">
+              <Link className="largeIcons" to="SignInRegister">
                 <CiUser />
               </Link>
             </div>
             <div className="iconBorder">
-              <Link class="largeIcons" to="Wishlist">
+              <Link className="largeIcons" to="Wishlist">
                 <CiHeart />
               </Link>
             </div>
             <div className="iconBorder">
-              <Link class="largeIcons" to="Cart">
+              <Link className="largeIcons" to="Cart">
                 <CiShoppingCart></CiShoppingCart>
               </Link>
             </div>
